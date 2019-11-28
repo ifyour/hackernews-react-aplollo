@@ -1,12 +1,26 @@
-import React from 'react';
-import logo from '../logo.svg';
-import '../styles/App.css';
-import LinkList from './LinkList';
-import CreateLink from './CreateLink'
+import React from "react";
+import { Switch, Route } from "react-router-dom";
 
-function App() {
-  // return <LinkList />
-  return <CreateLink />
+import "../styles/App.css";
+import logo from "../logo.svg";
+import Header from "./Header";
+import LinkList from "./LinkList";
+import CreateLink from "./CreateLink";
+
+class App extends React.Component {
+  render() {
+    return (
+      <div className="center w85">
+        <Header />
+        <div className="ph3 pv1 background-gray">
+          <Switch>
+            <Route exact path="/" component={LinkList} />
+            <Route exact path="/create" component={CreateLink} />
+          </Switch>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
