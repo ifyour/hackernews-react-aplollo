@@ -175,7 +175,7 @@ class LinkList extends Component {
             : 0;
 
           return (
-            <div>
+            <Fragment>
               {linksToRender.map((link, index) => (
                 <Link
                   key={link.id}
@@ -194,7 +194,7 @@ class LinkList extends Component {
                   </div>
                 </div>
               )}
-            </div>
+            </Fragment>
           );
         }}
       </Query>
