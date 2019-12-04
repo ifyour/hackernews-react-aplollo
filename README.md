@@ -21,14 +21,14 @@ $ cd hackernews-react-aplollo && yarn start
 - Authenticated users can upvote links (one vote per link and user)
 - Realtime updates when other users upvote a link or create a new one
 
-## Technologies
+### Technologies
 
-### Frontend
+#### Frontend
 
 - React: Frontend framework for building user interfaces
 - Apollo Client 2.1: Production-ready, caching GraphQL client
 
-### Backend
+#### Backend
 
 - graphql-yoga: Fully-featured GraphQL Server with focus on easy setup, performance & great developer experience
 - Prisma: Open-source GraphQL API layer that turns your database into a GraphQL API
